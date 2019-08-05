@@ -45,7 +45,7 @@ module.exports = function ({
           },
         })),
         ...grids.map(rows => ({
-          [`.grid-rows-${columns}`]: {
+          [`.grid-rows-${rows}`]: {
             gridTemplateRows: `repeat(${rows}, 1fr)`,
           },
         })),

@@ -76,10 +76,10 @@ module.exports = function ({
           },
         })),
         ..._.range(-1, (_.max(grids) + 2) * -1).map(line => ({
-          [`.row-start-${line}`]: {
+          [`.-row-start-${line}`]: {
             gridRowStart: `${line}`,
           },
-          [`.row-end-${line}`]: {
+          [`.-row-end-${line}`]: {
             gridRowEnd: `${line}`,
           },
         }))

@@ -44,6 +44,11 @@ module.exports = function ({
             gridTemplateColumns: `repeat(auto-fit, minmax(${size}, 1fr))`,
           },
         })),
+        ...grids.map(rows => ({
+          [`.grid-rows-${columns}`]: {
+            gridTemplateRows: `repeat(${rows}, 1fr)`,
+          },
+        })),
         ..._.range(1, _.max(grids) + 1).map(span => ({
           [`.col-span-${span}`]: {
             gridColumnStart: `span ${span}`,

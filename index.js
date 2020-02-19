@@ -12,7 +12,7 @@ module.exports = function ({
   }) {
     addUtilities(
       [{
-          '.grid': {
+          '.cssgrid': {
             display: 'grid',
           },
         },
